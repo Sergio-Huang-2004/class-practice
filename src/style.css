@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+/* 使用 class 策略的深色模式（在 <html> 上切换 .dark 类） */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
