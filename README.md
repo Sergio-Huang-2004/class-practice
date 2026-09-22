@@ -55,6 +55,7 @@
 │       ├── TaskModal.vue    # 新建/编辑弹窗（标题校验/ESC关闭）
 │       ├── KanbanBoard.vue  # 看板视图（三列拖拽改状态）
 │       └── ThemeToggle.vue  # 深色模式切换（localStorage 记忆）
+├── pictures/                # 功能运行截图
 └── public/
     └── favicon.svg          # 站点图标
 ```
@@ -100,7 +101,11 @@ npm run build
 
 ## 💡 提示词设计
 
-开发过程中使用的核心提示词（Prompt）：
+开发过程中使用的完整提示词设计文档（含分轮提示词、排错模板、设计原则）详见：
+
+📄 **[PROMPT_DESIGN.md](./PROMPT_DESIGN.md)**
+
+核心提示词摘要：
 
 ```text
 我在开发一个任务管理 Web App，技术栈：Vue 3 + Vite + Tailwind CSS + localStorage。
@@ -131,17 +136,29 @@ npm run build
 
 > 以下为各功能运行截图（运行 `npm run dev` 后在浏览器中截取）：
 
-### 列表视图 — 任务增删改查
-![列表视图](docs/list-view.png)
+### 主页面 — 列表视图
 
-### 看板视图 — 三列拖拽
-![看板视图](docs/kanban-view.png)
+![主页面-列表视图](./pictures/1.主页面-列表视图.png)
 
-### 新建任务弹窗
-![新建任务](docs/task-modal.png)
+### 看板视图
 
-### 深色模式
-![深色模式](docs/dark-mode.png)
+![看板视图](./pictures/2.看板视图.png)
+
+### 新建任务
+
+![新建任务](./pictures/3.新建任务.png)
+
+### 拖拽动作
+
+![拖拽动作](./pictures/4.拖拽动作.png)
+
+### 深夜模式 — 列表视图
+
+![深夜模式-列表视图](./pictures/5.深夜模式-列表视图.png)
+
+### 深夜模式 — 看板视图
+
+![深夜模式-看板视图](./pictures/6.深夜模式-看板视图.png)
 
 ---
 
